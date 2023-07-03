@@ -22,3 +22,24 @@ A single web page wired with events: For this assignment, you will be creating a
 */
 
 //document.querySelector(".hamlet").style.backgroundColor = "yellow";
+
+function highlight(el) {
+  if (el.style.backgroundColor == "white") {
+    //orange
+    el.style.backgroundColor = "orange";
+  } else {
+    //white
+    el.style.backgroundColor = "white";
+  }
+}
+
+function myAlert() {
+  alert("Im Clicked!");
+}
+
+const spans = document.querySelectorAll("#play span");
+console.log(spans);
+
+for (const mySpan of spans) {
+  mySpan.addEventListener("click", myAlert);
+}

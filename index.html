@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <style>
-        p.hamlet{background-color: yellow;}
-    </style> 
+      /* .hamlet{background-color: yellow;}*/
+
+      #play span {
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,10 +28,11 @@
     </header>
 
     <main class="wrapper">
-      <p><span onclick="this.style.backgroundColor='yellow'">Hamlet: To be or not to be?</span></p>
-      <p>Skull: Are you talking to me?</p>
-      <p>Hamlet: What did you say?</p>
-      <p>Content goes here</p>
+      <div id="play">
+        <p><span>Hamlet: To be or not to be?</span></p>
+        <p><span>Skull: Are you talking to me?</span></p>
+        <p><span>Hamlet: What did you say?</span></p>
+      </div>
       <footer>
         <p>
           <small
@@ -38,7 +43,7 @@
         </p>
       </footer>
     </main>
-    <script src="js/main.js"></scrip>
-    <script src="js/dom-play.js"></scr>
+    <script src="js/main.js"></script>
+    <script src="js/dom-play.js"></script>
   </body>
 </html>
