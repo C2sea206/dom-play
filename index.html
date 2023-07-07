@@ -56,6 +56,33 @@
           </span>
         </p>
       </div>
+      <br />
+      <hr />
+      <div>
+        <p>
+          The provided code performs the following tasks: The highlight(el)
+          function changes the background color of an element (el). If the
+          current background color is "white," it changes it to "orange."
+          Otherwise, it sets it back to "white." The myAlert() function displays
+          an alert message saying "I'm Clicked!" when called. The
+          highlightActor(actor) function iterates over a collection of span
+          elements with the id "play." For each span, it compares the actor
+          parameter with the value of its data-actor attribute. If there is a
+          match, it sets the background color of that span to "orange." If there
+          is no match, it sets the background color to "white." The const spans
+          = document.querySelectorAll("#play span") line selects all the span
+          elements that are descendants of an element with the id "play" and
+          assigns them to the spans constant. The for (const mySpan of spans)
+          loop iterates over each span element in the spans collection. For each
+          span, it attaches a click event listener. When a span element is
+          clicked, it calls the highlightActor() function and passes the
+          data-actor attribute value of that span as the parameter. The code
+          essentially sets up event listeners on the span elements, allowing the
+          user to interact with them. When clicked, the corresponding actor is
+          highlighted in orange, and other actors are displayed with a white
+          background color.
+        </p>
+      </div>
       <footer>
         <p>
           <small
