@@ -37,9 +37,26 @@ function myAlert() {
   alert("Im Clicked!");
 }
 
+function highlightActor(actor) {
+  //alert("Hi, I'm " + actor);
+  for (const mySpan of spans) {
+    if (actor == mySpan.dataset.actor) {
+      //orange
+      mySpan.style.backgroundColor = "orange";
+    } else {
+      //other actor
+      mySpan.style.backgroundColor = "white";
+    }
+  }
+}
+
 const spans = document.querySelectorAll("#play span");
 console.log(spans);
 
 for (const mySpan of spans) {
-  mySpan.addEventListener("click", myAlert);
+  //mySpan.addEventListener("click", myAlert);
+  mySpan.addEventListener("click", function (ev) {
+    highlightActor(mySpan.dataset.actor);
+  });
+  // alert(mySpan.dataset.actor);
 }
